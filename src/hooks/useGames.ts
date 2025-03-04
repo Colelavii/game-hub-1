@@ -35,7 +35,7 @@ const useGames = (gameQuery: GameQuery) =>
       // To compute the next page number
       return lastPage.next ? allPages.length + 1 : undefined;
     },
-    //     staleTime: 24 * 60 * 60 * 1000, // 24 * mins * secs * millisecs 24hrs data will be fresh for 24hrs no request will be made to the backend to fetch the genres
+    staleTime: 24 * 60 * 60 * 1000, // 24 * mins * secs * millisecs 24hrs data will be fresh for 24hrs no request will be made to the backend to fetch the genres
   });
 
 export default useGames;
